@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author 52812
+ * @author Benny Reyes Sosa
  */
 public class RutaMasCorta {
     private Scanner in;

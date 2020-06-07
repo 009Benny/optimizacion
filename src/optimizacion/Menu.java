@@ -8,11 +8,12 @@ package optimizacion;
 import Classes.BarridoClass;
 import Classes.Grafo;
 import Classes.GrafoCoordenadas;
+import Classes.GrafoVector;
 import java.util.Scanner;
 
 /**
  *
- * @author 52812
+ * @author Benny Reyes Sosa
  */
 public class Menu {
     private Grafo myGrafo;
@@ -63,7 +64,7 @@ public class Menu {
                 this.myGrafoXY = new GrafoCoordenadas(true);
                 break;
             case 5:
-                
+                GrafoVector grafo = new GrafoVector();
                 break;
             case 6:
                 if(this.myGrafoXY != null){

@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
- * @author 52812
+ * @author Benny Reyes Sosa
  */
 public class GrafoCoordenadas {
     private Scanner in;

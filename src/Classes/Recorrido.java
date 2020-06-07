@@ -7,7 +7,7 @@ package Classes;
 
 /**
  *
- * @author 52812
+ * @author Benny Reyes Sosa
  */
 public class Recorrido {
     public float max;

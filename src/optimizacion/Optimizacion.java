@@ -7,7 +7,7 @@ package optimizacion;
 
 /**
  *
- * @author 52812
+ * @author Benny Reyes Sosa
  */
 public class Optimizacion {
     
