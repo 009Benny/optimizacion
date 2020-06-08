@@ -6,9 +6,11 @@
 package optimizacion;
 
 import Classes.BarridoClass;
+import Classes.BusquedaTabu;
 import Classes.Grafo;
 import Classes.GrafoCoordenadas;
 import Classes.GrafoVector;
+import Classes.RutaMasCorta;
 import java.util.Scanner;
 
 /**
@@ -42,10 +44,11 @@ public class Menu {
             System.out.println("4.-Crear Grafo Coordenadas Random");
             System.out.println("5.-Ruta mas corta");
             System.out.println("6.-Problema de barrido");
+            System.out.println("7.-Busqueda Tabu");
             System.out.println("");
             System.out.println("Ingresa tu opción: ");
             option = in.nextInt();
-        }while(option > 6 || option < 0);
+        }while(option > 7 || option < 0);
         return option;
     }
     
@@ -65,6 +68,7 @@ public class Menu {
                 break;
             case 5:
                 GrafoVector grafo = new GrafoVector();
+                RutaMasCorta ruta = new RutaMasCorta(grafo);
                 break;
             case 6:
                 if(this.myGrafoXY != null){
@@ -72,6 +76,14 @@ public class Menu {
                 }else{
                     System.out.println("");
                     System.out.println("Necesitas crear un grafo coordenadas");
+                }
+                break;
+            case 7:
+                if(this.myGrafo != null){
+                    BusquedaTabu obj = new BusquedaTabu(this.myGrafo);
+                }else{
+                    System.out.println("");
+                    System.out.println("Necesitas crear un grafo normal");
                 }
                 break;
         }

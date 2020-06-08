@@ -22,7 +22,7 @@ public class BarridoClass {
     public BarridoClass(GrafoCoordenadas object) {
         this.myGrafo = object;
         this.arrayNodos = this.myGrafo.getArrayNodos();
-        this.in = this.in = new Scanner(System.in);
+        this.in = new Scanner(System.in);
         System.out.println("");
         System.out.println("");
         float max = this.getMaxCost();
